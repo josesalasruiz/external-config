@@ -1,0 +1,9 @@
+# HTTP Server
+server:  
+  port: 0   # HTTP port EL PUERTO NO LO NECESITA, YA QUE EL MICROSERVICIO PREGUNTA A EUREKA, SE PUEDE PONER CUALQUIERA
+
+# Discovery Server Access
+eureka:  
+  client:
+    serviceUrl:
+      defaultZone: http://discovery-server:1111/eureka/
